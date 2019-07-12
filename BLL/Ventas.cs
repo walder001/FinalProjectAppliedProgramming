@@ -16,6 +16,7 @@ namespace BLL
         public decimal ItebisVenta { get; set; }
         public decimal SubTotalVenta { get; set; }
         public decimal TotalVenta { get; set; }
+        VentasDetalle Detalle = new VentasDetalle();
         public Ventas()
         {
             VentasId = 0;
@@ -25,6 +26,7 @@ namespace BLL
             ItebisVenta = 0;
             SubTotalVenta = 0;
             TotalVenta = 0;
+            Detalle = new VentasDetalle();
 
         }
 
@@ -37,6 +39,8 @@ namespace BLL
             ItebisVenta = itebisVenta;
             SubTotalVenta = subTotalVenta;
             TotalVenta = totalVenta;
+            Detalle = new VentasDetalle();
+
         }
     }
 }
